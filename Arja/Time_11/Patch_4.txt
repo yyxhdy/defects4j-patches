@@ -1,0 +1,11 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Time/time_11_buggy/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java 316
+Faulty:
+return this;
+Seed:
+if (fromYear <= toYear) {
+  OfYear ofYear=new OfYear(mode,monthOfYear,dayOfMonth,dayOfWeek,advanceDayOfWeek,millisOfDay);
+  Recurrence recurrence=new Recurrence(ofYear,nameKey,saveMillis);
+  Rule rule=new Rule(recurrence,fromYear,toYear);
+  getLastRuleSet().addRule(rule);
+}
+**************************************************

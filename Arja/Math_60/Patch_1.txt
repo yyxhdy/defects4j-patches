@@ -1,0 +1,27 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_60_buggy/src/main/java/org/apache/commons/math/util/ContinuedFraction.java 186
+Faulty:
+throw new ConvergenceException(LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE,x);
+Seed:
+return 0.0;
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Math/math_60_buggy/src/main/java/org/apache/commons/math/util/ContinuedFraction.java 159
+Faulty:
+for (int i=0; i < maxPower; i++) {
+  lastScaleFactor=scaleFactor;
+  scaleFactor*=scale;
+  if (a != 0.0 && a > b) {
+    p2=p1 / lastScaleFactor + (b / scaleFactor * p0);
+    q2=q1 / lastScaleFactor + (b / scaleFactor * q0);
+  }
+ else   if (b != 0) {
+    p2=(a / scaleFactor * p1) + p0 / lastScaleFactor;
+    q2=(a / scaleFactor * q1) + q0 / lastScaleFactor;
+  }
+  infinite=Double.isInfinite(p2) || Double.isInfinite(q2);
+  if (!infinite) {
+    break;
+  }
+}
+Seed:
+continue;
+**************************************************

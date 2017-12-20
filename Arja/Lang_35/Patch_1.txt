@@ -1,0 +1,12 @@
+1 Replace /mnt/home/yyuan/Defects4J/Lang/lang_35_buggy/src/main/java/org/apache/commons/lang3/ArrayUtils.java 3295
+Faulty:
+type=Object.class;
+Seed:
+throw new IllegalArgumentException("The Integer did not match any specified value");
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Lang/lang_35_buggy/src/main/java/org/apache/commons/lang3/ArrayUtils.java 3574
+Faulty:
+return (T[])new Object[]{null};
+Seed:
+throw new IllegalArgumentException("The Integer did not match any specified value");
+**************************************************

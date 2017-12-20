@@ -1,0 +1,12 @@
+1 Replace /mnt/home/yyuan/Defects4J/Time/time_11_buggy/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java 371
+Faulty:
+if (tailZone == null && i == ruleSetCount - 1) {
+  tailZone=rs.buildTailZone(id);
+}
+Seed:
+if (addTransition(transitions,next)) {
+  if (tailZone != null) {
+    break;
+  }
+}
+**************************************************

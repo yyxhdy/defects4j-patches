@@ -1,0 +1,9 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_20_buggy/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java 909
+Faulty:
+for (int i=0; i < x.length; i++) {
+  double diff=boundaries[1][i] - boundaries[0][i];
+  res[i]=(x[i] - boundaries[0][i]) / diff;
+}
+Seed:
+logMu2=Math.log(mu + 0.5);
+**************************************************

@@ -1,0 +1,35 @@
+1 Delete /mnt/home/yyuan/Defects4J/Chart/chart_12_buggy/src/main/java/org/jfree/chart/JFreeChart.java 795
+Faulty:
+this.subtitles.remove(title);
+Seed:
+return this.borderVisible;
+**************************************************
+2 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_12_buggy/src/main/java/org/jfree/chart/JFreeChart.java 1486
+Faulty:
+ChartChangeEvent event=new ChartChangeEvent(this);
+Seed:
+this.plot=plot;
+**************************************************
+3 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_12_buggy/src/main/java/org/jfree/chart/JFreeChart.java 574
+Faulty:
+this.title=title;
+Seed:
+Rectangle2D nonTitleArea=new Rectangle2D.Double();
+**************************************************
+4 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_12_buggy/src/main/java/org/jfree/chart/plot/MultiplePiePlot.java 146
+Faulty:
+PiePlot piePlot=new PiePlot(null);
+Seed:
+if (dataset != null) {
+  setDatasetGroup(dataset.getGroup());
+  dataset.addChangeListener(this);
+}
+**************************************************
+5 Replace /mnt/home/yyuan/Defects4J/Chart/chart_12_buggy/src/main/java/org/jfree/chart/title/LegendTitle.java 541
+Faulty:
+if (obj == this) {
+  return true;
+}
+Seed:
+this.itemLabelPadding=new RectangleInsets(2.0,2.0,2.0,2.0);
+**************************************************

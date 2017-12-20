@@ -1,0 +1,15 @@
+1 Replace /mnt/home/yyuan/Defects4J/Chart/chart_1_buggy/src/main/java/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java 1797
+Faulty:
+if (dataset != null) {
+  return result;
+}
+Seed:
+if (dataset != null) {
+  this.rowCount=dataset.getRowCount();
+  this.columnCount=dataset.getColumnCount();
+}
+ else {
+  this.rowCount=0;
+  this.columnCount=0;
+}
+**************************************************

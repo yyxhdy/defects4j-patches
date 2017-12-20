@@ -1,0 +1,6 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_25_buggy/src/main/java/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java 381
+Faulty:
+result=new Range(this.minimumRangeValueIncStdDev,this.maximumRangeValueIncStdDev);
+Seed:
+this.data=new KeyedObjects2D();
+**************************************************

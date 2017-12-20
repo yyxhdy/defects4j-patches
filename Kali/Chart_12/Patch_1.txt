@@ -1,0 +1,3 @@
+InsertReturn true /mnt/home/yyuan/Defects4J/Chart/chart_12_buggy/src/main/java/org/jfree/data/general/AbstractDataset.java 160
+List list=Arrays.asList(this.listenerList.getListenerList());
+**************************************

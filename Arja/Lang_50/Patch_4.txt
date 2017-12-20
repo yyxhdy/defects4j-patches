@@ -1,0 +1,20 @@
+1 Replace /mnt/home/yyuan/Defects4J/Lang/lang_50_buggy/src/main/java/org/apache/commons/lang/time/FastDateFormat.java 281
+Faulty:
+if (timeZone != null) {
+  key=new Pair(key,timeZone);
+}
+Seed:
+if (locale == null) {
+  locale=Locale.getDefault();
+}
+**************************************************
+2 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_50_buggy/src/main/java/org/apache/commons/lang/time/FastDateFormat.java 1717
+Faulty:
+if (this == obj) {
+  return true;
+}
+Seed:
+if (obj instanceof FastDateFormat == false) {
+  return false;
+}
+**************************************************

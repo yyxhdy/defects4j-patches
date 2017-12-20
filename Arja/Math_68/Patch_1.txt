@@ -1,0 +1,8 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_68_buggy/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java 402
+Faulty:
+cost=previousCost;
+Seed:
+if (((Math.abs(actRed) <= costRelativeTolerance) && (preRed <= costRelativeTolerance) && (ratio <= 2.0)) || (delta <= parRelativeTolerance * xNorm)) {
+  return new VectorialPointValuePair(point,objective);
+}
+**************************************************

@@ -1,0 +1,13 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1136
+Faulty:
+for (int i=0; i < j; i+=4) {
+  for (int k=0; k < 4; k+=step) {
+    final double tmp=work[i + k];
+    work[i + k]=work[j - k];
+    work[j - k]=tmp;
+  }
+  j-=4;
+}
+Seed:
+g+=0.333 * (1 - g);
+**************************************************

@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_49_buggy/src/main/java/org/apache/commons/math/util/OpenIntToDoubleHashMap.java 399
+Faulty:
+++count;
+Seed:
+int idx=0;
+**************************************************

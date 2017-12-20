@@ -1,0 +1,17 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_2_buggy/src/main/java/org/apache/commons/math3/distribution/AbstractIntegerDistribution.java 129
+Faulty:
+if (chebyshevApplies) {
+  double k=FastMath.sqrt((1.0 - p) / p);
+  double tmp=mu - k * sigma;
+  if (tmp > lower) {
+    lower=((int)Math.ceil(tmp)) - 1;
+  }
+  k=1.0 / k;
+  tmp=mu + k * sigma;
+  if (tmp < upper) {
+    upper=((int)Math.ceil(tmp)) - 1;
+  }
+}
+Seed:
+double min=Double.POSITIVE_INFINITY;
+**************************************************

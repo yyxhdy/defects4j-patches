@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Time/time_14_buggy/src/main/java/org/joda/time/MonthDay.java 519
+Faulty:
+newValues=getField(index).add(this,index,newValues,amount);
+Seed:
+newValues=getField(index).addWrapPartial(this,index,newValues,amount);
+**************************************************

@@ -1,0 +1,24 @@
+1 Replace /mnt/home/yyuan/Defects4J/Lang/lang_7_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java 460
+Faulty:
+if (hexDigits > 8) {
+  return createLong(str);
+}
+Seed:
+if (str == null) {
+  return null;
+}
+**************************************************
+2 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_7_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java 588
+Faulty:
+return d;
+Seed:
+boolean foundDigit=false;
+**************************************************
+3 Replace /mnt/home/yyuan/Defects4J/Lang/lang_7_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java 453
+Faulty:
+return null;
+Seed:
+if (str == null) {
+  throw new IllegalArgumentException("The string must not be null");
+}
+**************************************************

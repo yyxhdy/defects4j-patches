@@ -1,0 +1,3 @@
+Delete /mnt/home/yyuan/Defects4J/Math/math_82_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java 63
+minValue=tableau.getEntry(0,i);
+**************************************

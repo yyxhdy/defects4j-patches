@@ -1,0 +1,14 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_22_buggy/src/main/java/org/apache/commons/math3/distribution/FDistribution.java 131
+Faulty:
+final double logx=FastMath.log(x);
+Seed:
+if (x <= 0) {
+  return 0;
+}
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Math/math_22_buggy/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java 184
+Faulty:
+return false;
+Seed:
+return true;
+**************************************************

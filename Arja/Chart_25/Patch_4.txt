@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Chart/chart_25_buggy/src/main/java/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java 111
+Faulty:
+result=masd.getMean();
+Seed:
+this.maximumRangeValueIncStdDev=Double.NaN;
+**************************************************

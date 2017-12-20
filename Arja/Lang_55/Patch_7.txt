@@ -1,0 +1,14 @@
+1 Delete /mnt/home/yyuan/Defects4J/Lang/lang_55_buggy/src/main/java/org/apache/commons/lang/time/StopWatch.java 118
+Faulty:
+stopTime=System.currentTimeMillis();
+Seed:
+startTime=System.currentTimeMillis();
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Lang/lang_55_buggy/src/main/java/org/apache/commons/lang/time/StopWatch.java 119
+Faulty:
+this.runningState=STATE_STOPPED;
+Seed:
+if (this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED) {
+  throw new IllegalStateException("Stopwatch is not running. ");
+}
+**************************************************

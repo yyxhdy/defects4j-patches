@@ -1,0 +1,10 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_60_buggy/src/main/java/org/apache/commons/lang/text/StrBuilder.java 1672
+Faulty:
+char[] thisBuf=buffer;
+Seed:
+if (buffer.length > length()) {
+  char[] old=buffer;
+  buffer=new char[length()];
+  System.arraycopy(old,0,buffer,0,size);
+}
+**************************************************

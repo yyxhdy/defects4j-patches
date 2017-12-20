@@ -1,0 +1,6 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_43_buggy/src/main/java/org/apache/commons/lang/text/ExtendedMessageFormat.java 159
+Faulty:
+break;
+Seed:
+pos.setIndex(pos.getIndex() + 1);
+**************************************************

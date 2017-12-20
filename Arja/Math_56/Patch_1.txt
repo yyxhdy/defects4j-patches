@@ -1,0 +1,24 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_56_buggy/src/main/java/org/apache/commons/math/util/MultidimensionalCounter.java 93
+Faulty:
+for (int i=0; i < dimension; i++) {
+  if (counter[i] != size[i] - 1) {
+    return true;
+  }
+}
+Seed:
+for (int i=last; i >= 0; i--) {
+  if (counter[i] == size[i] - 1) {
+    counter[i]=0;
+  }
+ else {
+    ++counter[i];
+    break;
+  }
+}
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Math/math_56_buggy/src/main/java/org/apache/commons/math/util/MultidimensionalCounter.java 281
+Faulty:
+return totalSize;
+Seed:
+return 0;
+**************************************************

@@ -1,0 +1,11 @@
+1 Replace /mnt/home/yyuan/Defects4J/Chart/chart_25_buggy/src/main/java/org/jfree/chart/renderer/category/StatisticalBarRenderer.java 207
+Faulty:
+if (orientation == PlotOrientation.HORIZONTAL) {
+  drawHorizontalItem(g2,state,dataArea,plot,domainAxis,rangeAxis,statData,row,column);
+}
+ else if (orientation == PlotOrientation.VERTICAL) {
+  drawVerticalItem(g2,state,dataArea,plot,domainAxis,rangeAxis,statData,row,column);
+}
+Seed:
+double x1=domainAxis.getCategoryMiddle(column,getColumnCount(),dataArea,plot.getDomainAxisEdge());
+**************************************************

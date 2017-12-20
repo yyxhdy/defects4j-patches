@@ -1,0 +1,157 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues2D.java 455
+Faulty:
+Iterator iterator=this.rows.iterator();
+Seed:
+int colCount=getColumnCount();
+**************************************************
+2 Delete /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/category/DefaultCategoryDataset.java 351
+Faulty:
+fireDatasetChanged();
+Seed:
+break;
+**************************************************
+3 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 337
+Faulty:
+removeValue(index);
+Seed:
+if (index < 0) {
+  throw new UnknownKeyException("The key (" + key + ") is not recognised.");
+}
+**************************************************
+4 Replace /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 318
+Faulty:
+if (index < this.keys.size()) {
+  rebuildIndex();
+}
+Seed:
+this.indexMap=new HashMap();
+**************************************************
+5 Delete /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 316
+Faulty:
+this.keys.remove(index);
+Seed:
+clear();
+**************************************************
+6 Delete /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/category/DefaultCategoryDataset.java 351
+Faulty:
+fireDatasetChanged();
+Seed:
+break;
+**************************************************
+7 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues2D.java 457
+Faulty:
+DefaultKeyedValues rowData=(DefaultKeyedValues)iterator.next();
+Seed:
+int i=0;
+**************************************************
+8 Delete /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 334
+Faulty:
+if (index < 0) {
+  return;
+}
+Seed:
+int i=0;
+**************************************************
+9 Delete /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/category/DefaultCategoryDataset.java 350
+Faulty:
+this.data.removeColumn(columnKey);
+Seed:
+return this.data.getRowKeys();
+**************************************************
+10 Replace /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues2D.java 458
+Faulty:
+rowData.removeValue(columnKey);
+Seed:
+boolean dataRemoved=false;
+**************************************************
+11 Delete /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 334
+Faulty:
+if (index < 0) {
+  return;
+}
+Seed:
+return getValue(index);
+**************************************************
+12 Delete /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues2D.java 456
+Faulty:
+while (iterator.hasNext()) {
+  DefaultKeyedValues rowData=(DefaultKeyedValues)iterator.next();
+  rowData.removeValue(columnKey);
+}
+Seed:
+KeyedObjects row=(KeyedObjects)iterator.next();
+**************************************************
+13 Delete /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 316
+Faulty:
+this.keys.remove(index);
+Seed:
+boolean allNull=true;
+**************************************************
+14 Delete /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/category/DefaultCategoryDataset.java 351
+Faulty:
+fireDatasetChanged();
+Seed:
+this.data=new DefaultKeyedValues2D();
+**************************************************
+15 Replace /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 335
+Faulty:
+return;
+Seed:
+return DomainOrder.ASCENDING;
+**************************************************
+16 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 337
+Faulty:
+removeValue(index);
+Seed:
+clear();
+**************************************************
+17 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 333
+Faulty:
+int index=getIndex(key);
+Seed:
+final Integer i=(Integer)this.indexMap.get(key);
+**************************************************
+18 Replace /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/category/DefaultCategoryDataset.java 351
+Faulty:
+fireDatasetChanged();
+Seed:
+this.data=new DefaultKeyedValues2D();
+**************************************************
+19 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 335
+Faulty:
+return;
+Seed:
+final int size=this.keys.size();
+**************************************************
+20 Delete /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 317
+Faulty:
+this.values.remove(index);
+Seed:
+DefaultKeyedValue clone=(DefaultKeyedValue)super.clone();
+**************************************************
+21 Replace /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues2D.java 460
+Faulty:
+this.columnKeys.remove(columnKey);
+Seed:
+int count=getItemCount();
+**************************************************
+22 Replace /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues2D.java 460
+Faulty:
+this.columnKeys.remove(columnKey);
+Seed:
+if (!(this.columnKeys.contains(columnKey))) {
+  throw new UnknownKeyException("Unrecognised columnKey: " + columnKey);
+}
+**************************************************
+23 Replace /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 335
+Faulty:
+return;
+Seed:
+return getObject(index);
+**************************************************
+24 Replace /mnt/home/yyuan/Defects4J/Chart/chart_18_buggy/src/main/java/org/jfree/data/DefaultKeyedValues.java 337
+Faulty:
+removeValue(index);
+Seed:
+index++;
+**************************************************

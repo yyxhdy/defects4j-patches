@@ -1,0 +1,5 @@
+RedirectBranch true /mnt/home/yyuan/Defects4J/Math/math_84_buggy/src/main/java/org/apache/commons/math/optimization/direct/MultiDirectional.java 90
+if (comparator.compare(contracted,best) < 0) {
+  return;
+}
+**************************************

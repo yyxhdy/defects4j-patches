@@ -1,0 +1,10 @@
+RedirectBranch true /mnt/home/yyuan/Defects4J/Lang/lang_44_buggy/src/main/java/org/apache/commons/lang/NumberUtils.java 193
+if (dec == null && exp == null && (numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {
+  try {
+    return createLong(numeric);
+  }
+ catch (  NumberFormatException nfe) {
+  }
+  return createBigInteger(numeric);
+}
+**************************************

@@ -1,0 +1,6 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_25_buggy/src/main/java/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java 273
+Faulty:
+return this.data.getColumnCount();
+Seed:
+this.data=new KeyedObjects2D();
+**************************************************

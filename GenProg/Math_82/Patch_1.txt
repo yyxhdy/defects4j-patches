@@ -1,0 +1,6 @@
+1 Delete /mnt/home/yyuan/Defects4J/Math/math_82_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java 63
+Faulty:
+minValue=tableau.getEntry(0,i);
+Seed:
+int slackVar=0;
+**************************************************

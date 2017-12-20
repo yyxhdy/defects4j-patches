@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Chart/chart_7_buggy/src/main/java/org/jfree/data/time/TimePeriodValues.java 552
+Faulty:
+return this.maxMiddleIndex;
+Seed:
+return this.maxEndIndex;
+**************************************************

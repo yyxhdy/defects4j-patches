@@ -1,0 +1,8 @@
+1 Delete /mnt/home/yyuan/Defects4J/Math/math_28_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java 123
+Faulty:
+if (Precision.equals(entry,1d,maxUlps) && row.equals(tableau.getBasicRow(column))) {
+  return row;
+}
+Seed:
+return null;
+**************************************************

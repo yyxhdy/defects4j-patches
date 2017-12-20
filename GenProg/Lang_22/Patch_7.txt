@@ -1,0 +1,12 @@
+1 Delete /mnt/home/yyuan/Defects4J/Lang/lang_22_buggy/src/main/java/org/apache/commons/lang3/math/Fraction.java 585
+Faulty:
+return 1;
+Seed:
+return 0;
+**************************************************
+2 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_22_buggy/src/main/java/org/apache/commons/lang3/math/Fraction.java 851
+Faulty:
+return (getNumerator() == other.getNumerator() && getDenominator() == other.getDenominator());
+Seed:
+int properNumerator=getProperNumerator();
+**************************************************

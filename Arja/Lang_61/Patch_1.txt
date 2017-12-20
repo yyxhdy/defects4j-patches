@@ -1,0 +1,18 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_61_buggy/src/main/java/org/apache/commons/lang/text/StrBuilder.java 1761
+Faulty:
+startIndex=(startIndex < 0 ? 0 : startIndex);
+Seed:
+if (buffer.length > length()) {
+  char[] old=buffer;
+  buffer=new char[length()];
+  System.arraycopy(old,0,buffer,0,size);
+}
+**************************************************
+2 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_61_buggy/src/main/java/org/apache/commons/lang/text/StrBuilder.java 1772
+Faulty:
+if (strLen > size) {
+  return -1;
+}
+Seed:
+ensureCapacity(size + 4);
+**************************************************

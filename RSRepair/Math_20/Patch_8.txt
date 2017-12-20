@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_20_buggy/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java 995
+Faulty:
+repaired[i]=1.0;
+Seed:
+double[] res=new double[x.length];
+**************************************************

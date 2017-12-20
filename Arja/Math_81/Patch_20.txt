@@ -1,0 +1,8 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_81_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+if (work[np - 8] > b2 || work[np - 4] > b1) {
+  return;
+}
+**************************************************

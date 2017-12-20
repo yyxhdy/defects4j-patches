@@ -1,0 +1,3 @@
+InsertReturn true /mnt/home/yyuan/Defects4J/Math/math_95_buggy/src/main/java/org/apache/commons/math/distribution/FDistributionImpl.java 145
+double d=getDenominatorDegreesOfFreedom();
+**************************************

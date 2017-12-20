@@ -1,0 +1,13 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_39_buggy/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java 259
+Faulty:
+yTmp[j]=y[j] + stepSize * sum;
+Seed:
+if (!isLastStep) {
+  interpolator.storeTime(stepStart);
+  final double nextT=stepStart + stepSize;
+  final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+  if (nextIsLast) {
+    stepSize=t - stepStart;
+  }
+}
+**************************************************

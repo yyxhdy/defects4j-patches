@@ -1,0 +1,10 @@
+1 Replace /mnt/home/yyuan/Defects4J/Chart/chart_13_buggy/src/main/java/org/jfree/chart/block/BorderArrangement.java 444
+Faulty:
+if (this.leftBlock != null) {
+  RectangleConstraint c3=new RectangleConstraint(0.0,new Range(0.0,constraint.getWidth()),LengthConstraintType.RANGE,h[2],null,LengthConstraintType.FIXED);
+  Size2D size=this.leftBlock.arrange(g2,c3);
+  w[2]=size.width;
+}
+Seed:
+w[4]=constraint.getWidth() - w[3] - w[2];
+**************************************************

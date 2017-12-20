@@ -1,0 +1,3 @@
+InsertReturn true /mnt/home/yyuan/Defects4J/Chart/chart_26_buggy/src/main/java/org/jfree/chart/plot/CategoryPlot.java 2547
+state=new PlotRenderingInfo(null);
+**************************************

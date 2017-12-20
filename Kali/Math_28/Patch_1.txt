@@ -1,0 +1,6 @@
+RedirectBranch true /mnt/home/yyuan/Defects4J/Math/math_28_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java 144
+if (i < minIndex) {
+  minIndex=i;
+  minRow=row;
+}
+**************************************

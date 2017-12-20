@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_81_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1484
+Faulty:
+b2=work[nn - 5] / work[nn - 7];
+Seed:
+double eCurrent=0;
+**************************************************

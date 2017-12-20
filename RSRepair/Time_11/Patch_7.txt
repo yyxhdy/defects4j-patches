@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Time/time_11_buggy/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java 366
+Faulty:
+break;
+Seed:
+tailZone=new DSTZone(tailZone.getID(),tailZone.iStandardOffset,tailZone.iStartRecurrence.renameAppend("-Summer"),tailZone.iEndRecurrence);
+**************************************************

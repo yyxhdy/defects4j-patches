@@ -1,0 +1,6 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_3_buggy/src/main/java/org/jfree/data/time/TimeSeries.java 579
+Faulty:
+item=(TimeSeriesDataItem)item.clone();
+Seed:
+findBoundsByIteration();
+**************************************************

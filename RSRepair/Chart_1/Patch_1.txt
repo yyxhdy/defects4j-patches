@@ -1,0 +1,6 @@
+1 Delete /mnt/home/yyuan/Defects4J/Chart/chart_1_buggy/src/main/java/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java 1798
+Faulty:
+return result;
+Seed:
+double y0=0.0;
+**************************************************

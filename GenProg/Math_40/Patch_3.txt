@@ -1,0 +1,17 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_40_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java 265
+Faulty:
+--end;
+Seed:
+for (int i=start; i < end - 1; ++i) {
+  final int delta=i + 1 - start;
+  for (int j=end - 1; j > i; --j) {
+    x[j]=(x[j] - x[j - 1]) / (y[j] - y[j - delta]);
+  }
+}
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Math/math_40_buggy/src/main/java/org/apache/commons/math/exception/MathIllegalStateException.java 86
+Faulty:
+return context.getLocalizedMessage();
+Seed:
+return context.getMessage();
+**************************************************

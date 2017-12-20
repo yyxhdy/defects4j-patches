@@ -1,0 +1,12 @@
+1 Delete /mnt/home/yyuan/Defects4J/Lang/lang_55_buggy/src/main/java/org/apache/commons/lang/time/StopWatch.java 118
+Faulty:
+stopTime=System.currentTimeMillis();
+Seed:
+this.runningState=STATE_STOPPED;
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Lang/lang_55_buggy/src/main/java/org/apache/commons/lang/time/StopWatch.java 119
+Faulty:
+this.runningState=STATE_STOPPED;
+Seed:
+this.splitState=STATE_SPLIT;
+**************************************************

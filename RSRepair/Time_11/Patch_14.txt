@@ -1,0 +1,10 @@
+1 Delete /mnt/home/yyuan/Defects4J/Time/time_11_buggy/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java 1460
+Faulty:
+if (ZoneInfoCompiler.verbose()) {
+  System.out.println("Fixing duplicate recurrent name key - " + tailZone.iStartRecurrence.getNameKey());
+}
+Seed:
+if ("UTC".equalsIgnoreCase(id)) {
+  return DateTimeZone.UTC;
+}
+**************************************************

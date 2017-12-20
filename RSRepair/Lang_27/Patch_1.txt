@@ -1,0 +1,6 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_27_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java 489
+Faulty:
+mant=str.substring(0,expPos);
+Seed:
+Float f=createFloat(str);
+**************************************************

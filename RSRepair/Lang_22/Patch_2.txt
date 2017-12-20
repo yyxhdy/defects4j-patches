@@ -1,0 +1,6 @@
+1 Delete /mnt/home/yyuan/Defects4J/Lang/lang_22_buggy/src/main/java/org/apache/commons/lang3/math/Fraction.java 585
+Faulty:
+return 1;
+Seed:
+double x1=1;
+**************************************************

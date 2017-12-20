@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Lang/lang_63_buggy/src/main/java/org/apache/commons/lang/time/DurationFormatUtils.java 439
+Faulty:
+return newdiff;
+Seed:
+return 0;
+**************************************************

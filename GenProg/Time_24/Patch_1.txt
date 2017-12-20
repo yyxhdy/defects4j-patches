@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Time/time_24_buggy/src/main/java/org/joda/time/chrono/BasicChronology.java 518
+Faulty:
+return getWeeksInYear(year - 1);
+Seed:
+return (int)(instant % DateTimeConstants.MILLIS_PER_DAY);
+**************************************************

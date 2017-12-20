@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Time/time_4_buggy/src/main/java/org/joda/time/field/ZeroIsMaxDateTimeField.java 178
+Faulty:
+return getWrappedField().getMaximumValue(instant,values) + 1;
+Seed:
+return -1;
+**************************************************

@@ -1,0 +1,8 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_12_buggy/src/main/java/org/jfree/chart/plot/MultiplePiePlot.java 148
+Faulty:
+this.pieChart.removeLegend();
+Seed:
+if (dataset != null) {
+  dataset.addChangeListener(this);
+}
+**************************************************

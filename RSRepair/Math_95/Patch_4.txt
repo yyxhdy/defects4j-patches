@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_95_buggy/src/main/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.5;
+**************************************************

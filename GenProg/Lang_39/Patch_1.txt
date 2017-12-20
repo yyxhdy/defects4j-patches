@@ -1,0 +1,25 @@
+1 Delete /mnt/home/yyuan/Defects4J/Lang/lang_39_buggy/src/main/java/org/apache/commons/lang3/StringUtils.java 3675
+Faulty:
+for (int i=0; i < searchList.length; i++) {
+  int greater=replacementList[i].length() - searchList[i].length();
+  if (greater > 0) {
+    increase+=3 * greater;
+  }
+}
+Seed:
+boolean lastMatch=false;
+**************************************************
+2 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_39_buggy/src/main/java/org/apache/commons/lang3/StringUtils.java 3691
+Faulty:
+buf.append(replacementList[replaceIndex]);
+Seed:
+if (textIndex == -1) {
+  return text;
+}
+**************************************************
+3 Delete /mnt/home/yyuan/Defects4J/Lang/lang_39_buggy/src/main/java/org/apache/commons/lang3/StringUtils.java 3676
+Faulty:
+int greater=replacementList[i].length() - searchList[i].length();
+Seed:
+int ret=-1;
+**************************************************

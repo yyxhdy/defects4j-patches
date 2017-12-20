@@ -1,0 +1,8 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_81_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1520
+Faulty:
+if (a2 < cnst1) {
+  s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+}
+Seed:
+tType=-3;
+**************************************************

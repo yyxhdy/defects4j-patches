@@ -1,0 +1,38 @@
+1 Delete /mnt/home/yyuan/Defects4J/Math/math_28_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java 119
+Faulty:
+for (Integer row : minRatioPositions) {
+  for (int i=0; i < tableau.getNumArtificialVariables(); i++) {
+    int column=i + tableau.getArtificialVariableOffset();
+    final double entry=tableau.getEntry(row,column);
+    if (Precision.equals(entry,1d,maxUlps) && row.equals(tableau.getBasicRow(column))) {
+      return row;
+    }
+  }
+}
+Seed:
+if (minRatioPositions.size() > 1) {
+  for (  Integer row : minRatioPositions) {
+    for (int i=0; i < tableau.getNumArtificialVariables(); i++) {
+      int column=i + tableau.getArtificialVariableOffset();
+      final double entry=tableau.getEntry(row,column);
+      if (Precision.equals(entry,1d,maxUlps) && row.equals(tableau.getBasicRow(column))) {
+        return row;
+      }
+    }
+  }
+  Integer minRow=null;
+  int minIndex=tableau.getWidth();
+  for (  Integer row : minRatioPositions) {
+    int i=tableau.getNumObjectiveFunctions();
+    for (; i < tableau.getWidth() - 1 && minRow != row; i++) {
+      if (row == tableau.getBasicRow(i)) {
+        if (i < minIndex) {
+          minIndex=i;
+          minRow=row;
+        }
+      }
+    }
+  }
+  return minRow;
+}
+**************************************************

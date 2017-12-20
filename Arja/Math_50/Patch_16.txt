@@ -1,0 +1,8 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_50_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java 188
+Faulty:
+x0=0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1),atol));
+Seed:
+if (FastMath.abs(f1) <= ftol) {
+  return x1;
+}
+**************************************************

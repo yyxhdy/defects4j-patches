@@ -1,0 +1,5 @@
+RedirectBranch false /mnt/home/yyuan/Defects4J/Chart/chart_25_buggy/src/main/java/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java 110
+if (masd != null) {
+  result=masd.getMean();
+}
+**************************************

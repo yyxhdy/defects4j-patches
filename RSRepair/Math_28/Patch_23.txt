@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_28_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java 151
+Faulty:
+return minRow;
+Seed:
+Integer minPos=null;
+**************************************************

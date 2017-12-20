@@ -1,0 +1,6 @@
+InsertReturn true /mnt/home/yyuan/Defects4J/Chart/chart_15_buggy/src/main/java/org/jfree/chart/plot/PiePlot3D.java 234
+if (info != null) {
+  info.setPlotArea(plotArea);
+  info.setDataArea(plotArea);
+}
+**************************************

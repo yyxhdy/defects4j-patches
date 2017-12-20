@@ -1,0 +1,14 @@
+1 Delete /mnt/home/yyuan/Defects4J/Chart/chart_25_buggy/src/main/java/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java 111
+Faulty:
+result=masd.getMean();
+Seed:
+if (this.equals(HistogramType.FREQUENCY)) {
+  return HistogramType.FREQUENCY;
+}
+ else if (this.equals(HistogramType.RELATIVE_FREQUENCY)) {
+  return HistogramType.RELATIVE_FREQUENCY;
+}
+ else if (this.equals(HistogramType.SCALE_AREA_TO_1)) {
+  return HistogramType.SCALE_AREA_TO_1;
+}
+**************************************************

@@ -1,0 +1,14 @@
+1 Replace /mnt/home/yyuan/Defects4J/Lang/lang_50_buggy/src/main/java/org/apache/commons/lang/time/FastDateFormat.java 234
+Faulty:
+return getDateInstance(style,null,null);
+Seed:
+return getInstance(getDefaultPattern(),null,null);
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Lang/lang_50_buggy/src/main/java/org/apache/commons/lang/time/FastDateFormat.java 479
+Faulty:
+cDateTimeInstanceCache.put(key,format);
+Seed:
+if (timeZone != null) {
+  key=new Pair(key,timeZone);
+}
+**************************************************

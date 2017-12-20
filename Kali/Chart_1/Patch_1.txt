@@ -1,0 +1,5 @@
+RedirectBranch false /mnt/home/yyuan/Defects4J/Chart/chart_1_buggy/src/main/java/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java 1797
+if (dataset != null) {
+  return result;
+}
+**************************************

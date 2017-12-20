@@ -1,0 +1,8 @@
+RedirectBranch true /mnt/home/yyuan/Defects4J/Math/math_49_buggy/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java 664
+if (!isDefaultValue(value)) {
+  entries.put(index,value);
+}
+ else if (entries.containsKey(index)) {
+  entries.remove(index);
+}
+**************************************

@@ -1,0 +1,8 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_86_buggy/src/main/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java 134
+Faulty:
+final double[] ltI=lTData[i];
+Seed:
+if (lTData[i][i] < absolutePositivityThreshold) {
+  throw new NotPositiveDefiniteMatrixException();
+}
+**************************************************

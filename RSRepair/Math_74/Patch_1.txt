@@ -1,0 +1,6 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_74_buggy/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 239
+Faulty:
+double hNew=stepSize;
+Seed:
+stepSize=t - stepStart;
+**************************************************

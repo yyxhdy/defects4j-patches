@@ -1,0 +1,10 @@
+1 Replace /mnt/home/yyuan/Defects4J/Lang/lang_22_buggy/src/main/java/org/apache/commons/lang3/math/Fraction.java 584
+Faulty:
+if (Math.abs(u) <= 1 || Math.abs(v) <= 1) {
+  return 1;
+}
+Seed:
+if (u > 0) {
+  u=-u;
+}
+**************************************************

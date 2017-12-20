@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Chart/chart_5_buggy/src/main/java/org/jfree/data/xy/XYSeries.java 564
+Faulty:
+this.data.add(-index - 1,new XYDataItem(x,y));
+Seed:
+this.data.add(new XYDataItem(x,y));
+**************************************************

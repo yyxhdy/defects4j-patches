@@ -1,0 +1,14 @@
+1 Replace /mnt/home/yyuan/Defects4J/Lang/lang_55_buggy/src/main/java/org/apache/commons/lang/time/StopWatch.java 118
+Faulty:
+stopTime=System.currentTimeMillis();
+Seed:
+if (this.runningState == STATE_STOPPED) {
+  throw new IllegalStateException("Stopwatch must be reset before being restarted. ");
+}
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Lang/lang_55_buggy/src/main/java/org/apache/commons/lang/time/StopWatch.java 119
+Faulty:
+this.runningState=STATE_STOPPED;
+Seed:
+return;
+**************************************************

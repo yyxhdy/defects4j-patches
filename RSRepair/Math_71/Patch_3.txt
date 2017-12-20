@@ -1,0 +1,13 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_71_buggy/src/main/java/org/apache/commons/math/ode/events/EventState.java 248
+Faulty:
+return true;
+Seed:
+if (Double.isNaN(previousEventTime) || (Math.abs(previousEventTime - root) > convergence)) {
+  pendingEventTime=root;
+  if (pendingEvent && (Math.abs(t1 - pendingEventTime) <= convergence)) {
+    return false;
+  }
+  pendingEvent=true;
+  return true;
+}
+**************************************************

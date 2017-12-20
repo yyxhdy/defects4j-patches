@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_58_buggy/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java 121
+Faulty:
+return fit(new Gaussian.Parametric(),guess);
+Seed:
+return fit((new ParameterGuesser(getObservations())).guess());
+**************************************************

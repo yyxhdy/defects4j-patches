@@ -1,0 +1,10 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_13_buggy/src/main/java/org/jfree/chart/block/BorderArrangement.java 436
+Faulty:
+if (this.bottomBlock != null) {
+  RectangleConstraint c2=new RectangleConstraint(w[0],null,LengthConstraintType.FIXED,0.0,new Range(0.0,constraint.getHeight() - h[0]),LengthConstraintType.RANGE);
+  Size2D size=this.bottomBlock.arrange(g2,c2);
+  h[1]=size.height;
+}
+Seed:
+this.rightBlock=null;
+**************************************************

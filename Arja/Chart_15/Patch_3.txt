@@ -1,0 +1,11 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_15_buggy/src/main/java/org/jfree/chart/plot/PiePlot3D.java 267
+Faulty:
+double linkY=plotArea.getY() + gapVertical / 2;
+Seed:
+if (DatasetUtilities.isEmptyOrNull(getDataset())) {
+  drawNoDataMessage(g2,plotArea);
+  g2.setClip(savedClip);
+  drawOutline(g2,plotArea);
+  return;
+}
+**************************************************

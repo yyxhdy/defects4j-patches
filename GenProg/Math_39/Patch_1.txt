@@ -1,0 +1,8 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_39_buggy/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java 262
+Faulty:
+computeDerivatives(stepStart + c[k - 1] * stepSize,yTmp,yDotK[k]);
+Seed:
+if ((forward && (stepStart + stepSize > t)) || ((!forward) && (stepStart + stepSize < t))) {
+  stepSize=t - stepStart;
+}
+**************************************************

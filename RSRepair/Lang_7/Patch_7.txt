@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Lang/lang_7_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java 453
+Faulty:
+return null;
+Seed:
+char lastChar=str.charAt(str.length() - 1);
+**************************************************

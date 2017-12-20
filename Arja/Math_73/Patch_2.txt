@@ -1,0 +1,8 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_73_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java 120
+Faulty:
+if (yInitial * yMin < 0) {
+  return solve(f,min,yMin,initial,yInitial,min,yMin);
+}
+Seed:
+verifyBracketing(min,max,f);
+**************************************************

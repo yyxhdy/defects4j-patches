@@ -1,0 +1,8 @@
+1 Delete /mnt/home/yyuan/Defects4J/Math/math_2_buggy/src/main/java/org/apache/commons/math3/distribution/AbstractIntegerDistribution.java 137
+Faulty:
+if (tmp < upper) {
+  upper=((int)Math.ceil(tmp)) - 1;
+}
+Seed:
+tmp=mu + k * sigma;
+**************************************************

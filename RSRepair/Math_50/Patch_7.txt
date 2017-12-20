@@ -1,0 +1,6 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_50_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java 189
+Faulty:
+f0=computeObjectiveValue(x0);
+Seed:
+double y0=computeObjectiveValue(x0);
+**************************************************

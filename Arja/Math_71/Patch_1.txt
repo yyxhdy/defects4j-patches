@@ -1,0 +1,22 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_71_buggy/src/main/java/org/apache/commons/math/ode/events/CombinedEventsManager.java 154
+Faulty:
+first=state;
+Seed:
+if (state.evaluateStep(interpolator)) {
+  if (first == null) {
+    first=state;
+  }
+ else {
+    if (interpolator.isForward()) {
+      if (state.getEventTime() < first.getEventTime()) {
+        first=state;
+      }
+    }
+ else {
+      if (state.getEventTime() > first.getEventTime()) {
+        first=state;
+      }
+    }
+  }
+}
+**************************************************

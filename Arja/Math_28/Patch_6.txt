@@ -1,0 +1,14 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_28_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java 143
+Faulty:
+if (row == tableau.getBasicRow(i)) {
+  if (i < minIndex) {
+    minIndex=i;
+    minRow=row;
+  }
+}
+Seed:
+if (i < minIndex) {
+  minIndex=i;
+  minRow=row;
+}
+**************************************************

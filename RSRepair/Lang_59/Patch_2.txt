@@ -1,0 +1,6 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_59_buggy/src/main/java/org/apache/commons/lang/text/StrBuilder.java 884
+Faulty:
+str.getChars(0,strLen,buffer,size);
+Seed:
+ensureCapacity(size + 5);
+**************************************************

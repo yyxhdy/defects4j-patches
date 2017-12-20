@@ -1,0 +1,10 @@
+RedirectBranch false /mnt/home/yyuan/Defects4J/Math/math_32_buggy/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java 136
+if ((Boolean)tree.getAttribute()) {
+  setSize(Double.POSITIVE_INFINITY);
+  setBarycenter(Vector2D.NaN);
+}
+ else {
+  setSize(0);
+  setBarycenter(new Vector2D(0,0));
+}
+**************************************

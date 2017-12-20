@@ -1,0 +1,14 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_22_buggy/src/main/java/org/apache/commons/math3/distribution/FDistribution.java 130
+Faulty:
+final double mhalf=denominatorDegreesOfFreedom / 2;
+Seed:
+if (x <= 0) {
+  return 0;
+}
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Math/math_22_buggy/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java 184
+Faulty:
+return false;
+Seed:
+return true;
+**************************************************

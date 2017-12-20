@@ -1,0 +1,8 @@
+1 Replace /mnt/home/yyuan/Defects4J/Chart/chart_3_buggy/src/main/java/org/jfree/data/time/TimeSeries.java 576
+Faulty:
+if (item == null) {
+  throw new IllegalArgumentException("Null 'item' argument.");
+}
+Seed:
+updateBoundsForRemovedItem(item);
+**************************************************

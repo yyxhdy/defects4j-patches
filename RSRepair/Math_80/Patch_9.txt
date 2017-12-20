@@ -1,0 +1,10 @@
+1 Delete /mnt/home/yyuan/Defects4J/Math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1137
+Faulty:
+for (int k=0; k < 4; k+=step) {
+  final double tmp=work[i + k];
+  work[i + k]=work[j - k];
+  work[j - k]=tmp;
+}
+Seed:
+double xNormSqr=0;
+**************************************************

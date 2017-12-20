@@ -1,0 +1,60 @@
+1 Delete /mnt/home/yyuan/Defects4J/Lang/lang_35_buggy/src/main/java/org/apache/commons/lang3/ArrayUtils.java 3574
+Faulty:
+return (T[])new Object[]{null};
+Seed:
+if (array == null) {
+  return INDEX_NOT_FOUND;
+}
+**************************************************
+2 Delete /mnt/home/yyuan/Defects4J/Lang/lang_35_buggy/src/main/java/org/apache/commons/lang3/ArrayUtils.java 3574
+Faulty:
+return (T[])new Object[]{null};
+Seed:
+if (array == null) {
+  return INDEX_NOT_FOUND;
+}
+**************************************************
+3 Delete /mnt/home/yyuan/Defects4J/Lang/lang_35_buggy/src/main/java/org/apache/commons/lang3/ArrayUtils.java 3574
+Faulty:
+return (T[])new Object[]{null};
+Seed:
+if (array == null) {
+  return INDEX_NOT_FOUND;
+}
+**************************************************
+4 Delete /mnt/home/yyuan/Defects4J/Lang/lang_35_buggy/src/main/java/org/apache/commons/lang3/ArrayUtils.java 3574
+Faulty:
+return (T[])new Object[]{null};
+Seed:
+if (array == null) {
+  return INDEX_NOT_FOUND;
+}
+**************************************************
+5 Delete /mnt/home/yyuan/Defects4J/Lang/lang_35_buggy/src/main/java/org/apache/commons/lang3/ArrayUtils.java 3574
+Faulty:
+return (T[])new Object[]{null};
+Seed:
+if (array == null) {
+  return INDEX_NOT_FOUND;
+}
+**************************************************
+6 Delete /mnt/home/yyuan/Defects4J/Lang/lang_35_buggy/src/main/java/org/apache/commons/lang3/ArrayUtils.java 3574
+Faulty:
+return (T[])new Object[]{null};
+Seed:
+if (array == null) {
+  return INDEX_NOT_FOUND;
+}
+**************************************************
+7 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_35_buggy/src/main/java/org/apache/commons/lang3/ArrayUtils.java 3574
+Faulty:
+return (T[])new Object[]{null};
+Seed:
+throw new IllegalArgumentException("The Integer did not match any specified value");
+**************************************************
+8 Replace /mnt/home/yyuan/Defects4J/Lang/lang_35_buggy/src/main/java/org/apache/commons/lang3/ArrayUtils.java 3295
+Faulty:
+type=Object.class;
+Seed:
+throw new IllegalArgumentException("The Integer did not match any specified value");
+**************************************************

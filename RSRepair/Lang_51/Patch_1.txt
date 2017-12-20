@@ -1,0 +1,56 @@
+1 Replace /mnt/home/yyuan/Defects4J/Lang/lang_51_buggy/src/main/java/org/apache/commons/lang/BooleanUtils.java 662
+Faulty:
+switch (str.length()) {
+case 2:
+{
+    char ch0=str.charAt(0);
+    char ch1=str.charAt(1);
+    return (ch0 == 'o' || ch0 == 'O') && (ch1 == 'n' || ch1 == 'N');
+  }
+case 3:
+{
+  char ch=str.charAt(0);
+  if (ch == 'y') {
+    return (str.charAt(1) == 'e' || str.charAt(1) == 'E') && (str.charAt(2) == 's' || str.charAt(2) == 'S');
+  }
+  if (ch == 'Y') {
+    return (str.charAt(1) == 'E' || str.charAt(1) == 'e') && (str.charAt(2) == 'S' || str.charAt(2) == 's');
+  }
+}
+case 4:
+{
+char ch=str.charAt(0);
+if (ch == 't') {
+  return (str.charAt(1) == 'r' || str.charAt(1) == 'R') && (str.charAt(2) == 'u' || str.charAt(2) == 'U') && (str.charAt(3) == 'e' || str.charAt(3) == 'E');
+}
+if (ch == 'T') {
+  return (str.charAt(1) == 'R' || str.charAt(1) == 'r') && (str.charAt(2) == 'U' || str.charAt(2) == 'u') && (str.charAt(3) == 'E' || str.charAt(3) == 'e');
+}
+}
+}
+Seed:
+if ("true".equalsIgnoreCase(str)) {
+  return Boolean.TRUE;
+}
+ else if ("false".equalsIgnoreCase(str)) {
+  return Boolean.FALSE;
+}
+ else if ("on".equalsIgnoreCase(str)) {
+  return Boolean.TRUE;
+}
+ else if ("off".equalsIgnoreCase(str)) {
+  return Boolean.FALSE;
+}
+ else if ("yes".equalsIgnoreCase(str)) {
+  return Boolean.TRUE;
+}
+ else if ("no".equalsIgnoreCase(str)) {
+  return Boolean.FALSE;
+}
+**************************************************
+2 Delete /mnt/home/yyuan/Defects4J/Lang/lang_51_buggy/src/main/java/org/apache/commons/lang/BooleanUtils.java 671
+Faulty:
+char ch=str.charAt(0);
+Seed:
+rehash();
+**************************************************

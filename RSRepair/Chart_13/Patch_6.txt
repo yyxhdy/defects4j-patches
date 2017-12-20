@@ -1,0 +1,6 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_13_buggy/src/main/java/org/jfree/chart/block/BorderArrangement.java 308
+Faulty:
+h[3]=size.height;
+Seed:
+this.leftBlock=null;
+**************************************************

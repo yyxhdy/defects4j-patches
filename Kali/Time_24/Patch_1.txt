@@ -1,0 +1,3 @@
+InsertReturn true /mnt/home/yyuan/Defects4J/Time/time_24_buggy/src/main/java/org/joda/time/chrono/BasicChronology.java 518
+return getWeeksInYear(year - 1);
+**************************************

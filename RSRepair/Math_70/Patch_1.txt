@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_70_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java 72
+Faulty:
+return solve(min,max);
+Seed:
+return solve(f,min,max);
+**************************************************

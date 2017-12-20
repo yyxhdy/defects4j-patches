@@ -1,0 +1,8 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_19_buggy/src/main/java/org/jfree/chart/util/AbstractObjectList.java 164
+Faulty:
+return -1;
+Seed:
+if (object == null) {
+  throw new IllegalArgumentException("Null 'object' argument.");
+}
+**************************************************

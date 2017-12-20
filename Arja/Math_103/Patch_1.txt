@@ -1,0 +1,26 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_103_buggy/src/main/java/org/apache/commons/math/special/Gamma.java 169
+Faulty:
+double an=1.0 / a;
+Seed:
+if (Double.isNaN(x) || (x <= 0.0)) {
+  ret=Double.NaN;
+}
+ else {
+  double g=607.0 / 128.0;
+  double sum=0.0;
+  for (int i=lanczos.length - 1; i > 0; --i) {
+    sum=sum + (lanczos[i] / (x + i));
+  }
+  sum=sum + lanczos[0];
+  double tmp=x + g + .5;
+  ret=((x + .5) * Math.log(tmp)) - tmp + HALF_LOG_2_PI + Math.log(sum / x);
+}
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Math/math_103_buggy/src/main/java/org/apache/commons/math/special/Gamma.java 180
+Faulty:
+throw new MaxIterationsExceededException(maxIterations);
+Seed:
+for (int i=lanczos.length - 1; i > 0; --i) {
+  sum=sum + (lanczos[i] / (x + i));
+}
+**************************************************

@@ -1,0 +1,9 @@
+1 Replace /mnt/home/yyuan/Defects4J/Chart/chart_12_buggy/src/main/java/org/jfree/chart/plot/MultiplePiePlot.java 154
+Faulty:
+this.pieChart.setTitle(seriesTitle);
+Seed:
+if (dataset != null) {
+  setDatasetGroup(dataset.getGroup());
+  dataset.addChangeListener(this);
+}
+**************************************************

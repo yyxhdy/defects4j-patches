@@ -1,0 +1,6 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_63_buggy/src/main/java/org/apache/commons/lang/time/DurationFormatUtils.java 312
+Faulty:
+months-=1;
+Seed:
+start.add(Calendar.DATE,-1);
+**************************************************

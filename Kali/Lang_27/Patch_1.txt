@@ -1,0 +1,8 @@
+RedirectBranch false /mnt/home/yyuan/Defects4J/Lang/lang_27_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java 488
+if (expPos > -1) {
+  mant=str.substring(0,expPos);
+}
+ else {
+  mant=str;
+}
+**************************************

@@ -1,0 +1,9 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Chart/chart_12_buggy/src/main/java/org/jfree/chart/plot/MultiplePiePlot.java 146
+Faulty:
+PiePlot piePlot=new PiePlot(null);
+Seed:
+if (dataset != null) {
+  setDatasetGroup(dataset.getGroup());
+  dataset.addChangeListener(this);
+}
+**************************************************

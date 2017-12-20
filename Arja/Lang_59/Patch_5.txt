@@ -1,0 +1,6 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_59_buggy/src/main/java/org/apache/commons/lang/text/StrBuilder.java 880
+Faulty:
+ensureCapacity(size + width);
+Seed:
+ensureCapacity(size + 4);
+**************************************************

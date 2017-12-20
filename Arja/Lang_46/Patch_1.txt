@@ -1,0 +1,14 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_46_buggy/src/main/java/org/apache/commons/lang/StringEscapeUtils.java 245
+Faulty:
+out.write('/');
+Seed:
+if (escapeSingleQuote) {
+  out.write('\\');
+}
+**************************************************
+2 Delete /mnt/home/yyuan/Defects4J/Lang/lang_46_buggy/src/main/java/org/apache/commons/lang/StringEscapeUtils.java 244
+Faulty:
+out.write('\\');
+Seed:
+out.write('\r');
+**************************************************

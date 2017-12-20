@@ -1,0 +1,18 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_22_buggy/src/main/java/org/apache/commons/lang3/math/Fraction.java 479
+Faulty:
+if (gcd == 1) {
+  return this;
+}
+Seed:
+boolean allowSigns=false;
+**************************************************
+2 Delete /mnt/home/yyuan/Defects4J/Lang/lang_22_buggy/src/main/java/org/apache/commons/lang3/math/Fraction.java 584
+Faulty:
+if (Math.abs(u) <= 1 || Math.abs(v) <= 1) {
+  return 1;
+}
+Seed:
+if (v > 0) {
+  v=-v;
+}
+**************************************************

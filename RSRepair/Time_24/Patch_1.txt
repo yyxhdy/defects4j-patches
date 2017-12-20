@@ -1,0 +1,14 @@
+1 Replace /mnt/home/yyuan/Defects4J/Time/time_24_buggy/src/main/java/org/joda/time/LocalDate.java 490
+Faulty:
+if (fieldType == null) {
+  throw new IllegalArgumentException("The DateTimeFieldType must not be null");
+}
+Seed:
+DATE_DURATION_TYPES.add(DurationFieldType.years());
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Time/time_24_buggy/src/main/java/org/joda/time/chrono/BasicChronology.java 518
+Faulty:
+return getWeeksInYear(year - 1);
+Seed:
+return (int)(instant % DateTimeConstants.MILLIS_PER_DAY);
+**************************************************

@@ -1,0 +1,14 @@
+1 Delete /mnt/home/yyuan/Defects4J/Lang/lang_22_buggy/src/main/java/org/apache/commons/lang3/math/Fraction.java 584
+Faulty:
+if (Math.abs(u) <= 1 || Math.abs(v) <= 1) {
+  return 1;
+}
+Seed:
+throw new NumberFormatException("A blank string is not a valid number");
+**************************************************
+2 InsertBefore /mnt/home/yyuan/Defects4J/Lang/lang_22_buggy/src/main/java/org/apache/commons/lang3/math/Fraction.java 614
+Faulty:
+u=-t;
+Seed:
+boolean hasDecPoint=false;
+**************************************************

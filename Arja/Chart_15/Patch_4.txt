@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Chart/chart_15_buggy/src/main/java/org/jfree/chart/ChartFactory.java 694
+Faulty:
+PiePlot3D plot=new PiePlot3D(dataset);
+Seed:
+PiePlot plot=new PiePlot(dataset);
+**************************************************

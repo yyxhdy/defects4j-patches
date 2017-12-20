@@ -1,0 +1,12 @@
+1 Replace /mnt/home/yyuan/Defects4J/Lang/lang_41_buggy/src/main/java/org/apache/commons/lang/ClassUtils.java 172
+Faulty:
+return getShortClassName(cls.getName());
+Seed:
+return getShortCanonicalName(cls.getName());
+**************************************************
+2 Replace /mnt/home/yyuan/Defects4J/Lang/lang_41_buggy/src/main/java/org/apache/commons/lang/ClassUtils.java 232
+Faulty:
+return getPackageName(cls.getName());
+Seed:
+return getPackageCanonicalName(cls.getName());
+**************************************************

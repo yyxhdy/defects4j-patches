@@ -1,0 +1,10 @@
+1 Replace /mnt/home/yyuan/Defects4J/Chart/chart_13_buggy/src/main/java/org/jfree/chart/block/BorderArrangement.java 427
+Faulty:
+if (this.topBlock != null) {
+  RectangleConstraint c1=new RectangleConstraint(w[0],null,LengthConstraintType.FIXED,0.0,new Range(0.0,constraint.getHeight()),LengthConstraintType.RANGE);
+  Size2D size=this.topBlock.arrange(g2,c1);
+  h[0]=size.height;
+}
+Seed:
+this.rightBlock=null;
+**************************************************

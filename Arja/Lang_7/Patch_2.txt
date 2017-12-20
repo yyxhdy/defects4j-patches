@@ -1,0 +1,10 @@
+1 Delete /mnt/home/yyuan/Defects4J/Lang/lang_7_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java 452
+Faulty:
+if (str.startsWith("--")) {
+  return null;
+}
+Seed:
+if (str == null) {
+  return null;
+}
+**************************************************

@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Time/time_11_buggy/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java 372
+Faulty:
+tailZone=rs.buildTailZone(id);
+Seed:
+String[][] zoneStrings=new DateFormatSymbols(Locale.ENGLISH).getZoneStrings();
+**************************************************

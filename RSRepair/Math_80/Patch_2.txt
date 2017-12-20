@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1139
+Faulty:
+work[i + k]=work[j - k];
+Seed:
+double lower=Double.POSITIVE_INFINITY;
+**************************************************

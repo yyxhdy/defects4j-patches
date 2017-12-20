@@ -1,0 +1,17 @@
+1 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_40_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java 265
+Faulty:
+--end;
+Seed:
+for (int i=start; i < end - 1; ++i) {
+  final int delta=i + 1 - start;
+  for (int j=end - 1; j > i; --j) {
+    x[j]=(x[j] - x[j - 1]) / (y[j] - y[j - delta]);
+  }
+}
+**************************************************
+2 InsertBefore /mnt/home/yyuan/Defects4J/Math/math_40_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java 296
+Faulty:
+System.arraycopy(y,start,y,0,nbPoints);
+Seed:
+double x1=getMax();
+**************************************************

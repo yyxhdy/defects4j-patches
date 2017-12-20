@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_31_buggy/src/main/java/org/apache/commons/math3/util/ContinuedFraction.java 177
+Faulty:
+throw new ConvergenceException(LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE,x);
+Seed:
+return n;
+**************************************************

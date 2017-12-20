@@ -1,0 +1,6 @@
+1 Replace /mnt/home/yyuan/Defects4J/Math/math_103_buggy/src/main/java/org/apache/commons/math/special/Gamma.java 180
+Faulty:
+throw new MaxIterationsExceededException(maxIterations);
+Seed:
+ret=1.0;
+**************************************************
